@@ -1,4 +1,4 @@
 FROM openjdk:11
-ARG JAR_FILE
-COPY ${JAR_FILE} app.jar
+EXPOSE 8081
+ADD target/testdevops-monitoring.jar testdevops-monitoring.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]
