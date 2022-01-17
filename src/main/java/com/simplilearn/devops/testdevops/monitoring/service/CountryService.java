@@ -95,6 +95,7 @@ public class CountryService {
 			if(foundCountry != null) {
 				countryRepository.deleteById(id);
 				logger.info("Country deleted");
+				
 			}
 		} catch (DataAccessException e) {
 			logger.error("Coudn't find Country with id: " + id + ". " + e);
